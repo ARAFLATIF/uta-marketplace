@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FAF7F0;
+  background-image: radial-gradient(#e5ddc8 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: #1a1a1a;
+}
+
+.pin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, #F5811F, #C4600F);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.35);
+}
+
+.listing-card {
+  transition: transform 0.15s ease;
+}
+
+.listing-card:hover {
+  transform: rotate(-0.6deg) translateY(-2px);
+}
